@@ -1,0 +1,345 @@
+/** HEADER **/
+#header-nav {
+    background-color: #f6b319; /* Color de fondo del encabezado */
+    border-radius: 0; /* Elimina esquinas redondeadas */
+    border: 0; /* Elimina bordes */
+}
+
+#logo-img {
+    background: url('../images/restaurantlogo_large.png') no-repeat; /* Agrega el logo como fondo sin repetición */
+    width: 150px; /* Ancho del logo */
+    height: 150px; /* Altura del logo */
+    margin: 10px 15px 10px 0; /* Espaciado externo */
+}
+
+.navbar-brand {
+    padding-top: 25px; /* Espacio superior */
+}
+
+.navbar-brand h1 { /* Estilos del nombre del restaurante */
+    font-family: 'Lora', serif; /* Fuente del texto */
+    color: #557c3e; /* Color del texto */
+    font-size: 1.5em; /* Tamaño del texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 1px 1px 1px #222; /* Agrega sombra al texto */
+    margin-top: 0; /* Sin margen superior */
+    margin-bottom: 0; /* Sin margen inferior */
+    line-height: .75; /* Ajusta el espaciado entre líneas */
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none; /* Elimina el subrayado en hover o al enfocar */
+}
+
+.navbar-brandp { /* Estilos para la certificación Kosher */
+    color: #000; /* Color negro */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: .7em; /* Tamaño del texto más pequeño */
+    margin-top: 15px; /* Espaciado superior */
+}
+
+.navbar-brandpspan { /* Estilos para el texto Star-K dentro de la certificación */
+    vertical-align: middle; /* Alineación vertical centrada */
+}
+
+/** NAVIGATION **/
+#nav-list {
+    margin-top: 10px; /* Espaciado superior de la lista de navegación */
+}
+
+#nav-list a {
+    color: #951C49; /* Color del texto del enlace */
+    text-align: center; /* Centra el texto */
+}
+
+#nav-list a:hover {
+    background: #E7E7E7; /* Color de fondo al pasar el cursor */
+}
+
+#nav-list a span {
+    font-size: 1.8em; /* Tamaño más grande del texto dentro del enlace */
+}
+
+#phone {
+    margin-top: 5px; /* Espaciado superior */
+}
+
+#phone a { /* Número de teléfono */
+    text-align: right; /* Alinea el texto a la derecha */
+    padding-bottom: 0; /* Sin padding inferior */
+}
+
+#phone div { /* "We Deliver" */
+    color: #557c3e; /* Color del texto */
+    text-align: right; /* Alineación a la derecha */
+    padding-right: 15px; /* Espaciado derecho */
+}
+
+/** BUTTONS **/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f; /* Borde alrededor del botón del menú y las barras del icono */
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both; /* Evita que el botón flote junto a otros elementos */
+    margin-top: -30px; /* Desplaza el botón hacia arriba */
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    /* Aquí puedes agregar estilos específicos para pantallas grandes */
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    #logo-img {
+        background: url('../images/restaurant-logo_medium.png') no-repeat; /* Cambia el logo para pantallas medianas */
+        width: 100px; /* Reduce el tamaño del logo */
+        height: 100px;
+        margin: 5px 5px 5px 0; /* Ajusta los márgenes */
+    }
+    /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Puedes agregar estilos para dispositivos pequeños aquí */
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) { /* Aplica estos estilos solo a pantallas menores a 767px (dispositivos móviles) */
+
+/* Header */
+.navbar-brand {
+    padding-top: 10px; /* Reduce el espacio superior de la marca del navbar */
+    height: 80px; /* Reduce la altura del navbar */
+}
+
+.navbar-brand h1 { /* Nombre del restaurante */
+    padding-top: 10px; /* Agrega un pequeño espacio superior */
+    font-size: 5vw; /* Tamaño del texto relativo al ancho de la ventana (5% del ancho) */
+}
+
+.navbar-brand p { /* Certificación Kosher */
+    font-size: .6em; /* Reduce el tamaño del texto */
+    margin-top: 12px; /* Agrega espacio en la parte superior */
+}
+
+.navbar-brand p img { /* Imagen de la certificación Kosher */
+    height: 20px; /* Reduce la altura de la imagen */
+}
+
+#collapsable-nav a { /* Texto dentro del menú colapsable */
+    font-size: 1.2em; /* Aumenta ligeramente el tamaño del texto */
+}
+
+#collapsable-nav a span { /* Iconos dentro del menú colapsable */
+    font-size: 1em; /* Define el tamaño del icono */
+    margin-right: 5px; /* Agrega espacio a la derecha del icono */
+}
+
+#call-btn > a {
+    font-size: 1.5em; /* Tamaño de fuente */
+    display: block; /* Hace el enlace un bloque */
+    margin: 0 20px; /* Márgenes laterales */
+    padding: 10px; /* Espaciado interior */
+    border: 2px solid #fff; /* Borde blanco */
+    background-color: #f6b319; /* Fondo dorado */
+    color: #951c49; /* Color de texto rojo */
+}
+
+#xs-deliver {
+    margin-top: 5px; /* Margen superior */
+    font-size: .7em; /* Tamaño de fuente pequeño */
+    letter-spacing: .1em; /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+}
+/* HOME PAGE */
+.container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F; /* Sombra alrededor del jumbotron para darle profundidad */
+    border: 2px solid #3F0C1F; /* Borde de 2px de color oscuro */
+}
+/* END HOME PAGE */
+
+
+
+@media(min-width: 1200px) { /* Aplica estas reglas solo en pantallas grandes (mayores a 1200px) */
+    .container.jumbotron {
+        background: url('../images/jumbotron_1200.jpg') no-repeat; /* Fondo de la imagen para pantallas grandes */
+        height: 675px; /* Establece una altura fija de 675px para el jumbotron */
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) { /* Aplica estas reglas en pantallas medianas (entre 992px y 1199px) */
+    /* Home Page */
+    .container.jumbotron {
+        background: url('../images/jumbotron_992.jpg') no-repeat; /* Fondo de la imagen para pantallas medianas */
+        height: 558px; /* Ajusta la altura a 558px para pantallas medianas */
+    }
+    /* End Home Page */
+}
+
+@media(min-width: 768px) and (max-width: 991px) { /* Aplica estas reglas en pantallas pequeñas (entre 768px y 991px) */
+    /* Home Page */
+    .container.jumbotron {
+        background: url('../images/jumbotron_768.jpg') no-repeat; /* Fondo de la imagen para pantallas pequeñas */
+        height: 432px; /* Ajusta la altura a 432px para pantallas pequeñas */
+    }
+    /* End Home Page */
+}
+
+@media(max-width: 767px) { /* Aplica estas reglas solo en pantallas extra pequeñas (menores a 768px) */
+    /* Home Page */
+    .container .jumbotron {
+        margin-top: 30px; /* Agrega un margen superior de 30px */
+        padding: 0; /* Elimina el padding */
+    }
+    /* End Home Page */
+}
+
+
+/* HOME PAGE */
+.container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F; /* Sombra de 50px en color burdeos */
+    border: 2px solid #3F0C1F; /* Borde de 2px en color burdeos */
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px; /* Altura de 250px */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 15px; /* Márgenes inferiores de 15px */
+    position: relative; /* Posición relativa */
+    border: 2px solid #3F0C1F; /* Borde de 2px en color burdeos */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc; /* Sombra ligera en hover */
+}
+
+#menu-tile {
+    background: url('../images/menu-tile.jpg') no-repeat; /* Fondo de imagen para el menú */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+#specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat; /* Fondo de imagen para los especiales */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute; /* Posición absoluta dentro del contenedor */
+    bottom: 0; /* Ubicación en la parte inferior */
+    right: 0; /* Ubicación en el lado derecho */
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Centra el texto */
+    font-size: 1.6em; /* Tamaño de fuente de 1.6em */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    opacity: .8; /* Opacidad del 80% */
+}
+/* END HOME PAGE */
+/********** Large devices only **********/
+
+
+
+
+/* Home Page */
+.container .jumbotron {
+  margin-top: 30px; /* Añade un margen superior de 30px al contenedor */
+  padding: 0; /* Elimina el padding dentro del contenedor */
+}
+#menu-tile, #specials-tile {
+  width: 360px; /* Establece un ancho fijo de 360px */
+  margin: 0 auto 15px; /* Centra el elemento horizontalmente y agrega un margen inferior de 15px */
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) { /* Aplica estas reglas solo en dispositivos muy pequeños */
+  /* Header */
+  .navbar-brand h1 { /* Nombre del restaurante */
+    padding-top: 5px; /* Añade un padding superior de 5px */
+    font-size: 6vw; /* Establece el tamaño de fuente como un porcentaje del ancho de la ventana */
+  }
+  /* End Header */
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px; /* Cambia el ancho a 280px en pantallas pequeñas */
+    margin: 0 auto 15px; /* Sigue centrando y añadiendo margen inferior de 15px */
+  }
+}
+
+
+/* Footer */
+.panel-footer section {
+    margin-bottom: 30px; /* Añade un margen inferior de 30px a cada sección dentro del pie de página */
+    text-align: center; /* Centra el texto dentro de cada sección */
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* Elimina el margen inferior en la tercera sección, ya que la fila completa tiene márgenes */
+  }
+  .panel-footer section hr {
+    width: 50%; /* Define el ancho de la línea horizontal (hr) a un 50% de la sección */
+  }
+  /* End Footer */
+  
+
+
+
+
+  /* FOOTER */
+.panel-footer { 
+    margin-top: 30px; /* Espacio superior del footer */
+    padding-top: 35px; /* Espacio interno superior en el footer */
+    padding-bottom: 30px; /* Espacio interno inferior en el footer */
+    background-color: #000000; /* Fondo oscuro para el footer */
+    border-top: 0; /* Elimina el borde superior */
+    color: white; /* Cambia todo el texto dentro del footer a blanco */
+}
+.panel-footer div.row { 
+    margin-bottom: 35px; /* Espacio inferior entre las filas del footer */
+}
+#hours, #address { 
+    line-height: 2; /* Aumenta la altura de línea de estos elementos */
+}
+#hours > span, #address > span { 
+    font-size: 1.3em; /* Aumenta el tamaño de la fuente */
+}
+#address p { 
+    color: #5eff00; /* Color verde para el texto de dirección */
+    font-size: .8em; /* Tamaño de fuente más pequeño */
+    line-height: 1.8; /* Aumenta la altura de línea para mejor legibilidad */
+}
+#testimonials { 
+    font-style: italic; /* Aplica cursiva a las citas */
+}
+#testimonials p:nth-child(2) { 
+    margin-top: 25px; /* Agrega espacio en la parte superior del segundo párrafo */
+}
+/* END FOOTER */
+
+
+
+
+/* Footer */
+.panel-footer section {
+    margin-bottom: 30px; /* Establece un margen inferior de 30px entre las secciones del footer */
+    text-align: center; /* Centra el texto dentro de cada sección del footer */
+}
+
+.panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* Elimina el margen inferior para la tercera sección, ya que el margen se aplica en todo el contenedor */
+}
+
+.panel-footer section hr {
+    width: 50%; /* Define el ancho del separador horizontal (hr) al 50% de la sección */
+}
+
+/* End Footer */
+
+
