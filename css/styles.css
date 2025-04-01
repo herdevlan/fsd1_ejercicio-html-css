@@ -168,7 +168,7 @@
 
 
 @media(min-width: 1200px) { /* Aplica estas reglas solo en pantallas grandes (mayores a 1200px) */
-    .container.jumbotron {
+    .container .jumbotron {
         background: url('../images/jumbotron_1200.jpg') no-repeat; /* Fondo de la imagen para pantallas grandes */
         height: 675px; /* Establece una altura fija de 675px para el jumbotron */
     }
